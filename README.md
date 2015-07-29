@@ -2,21 +2,17 @@
 
 Search a directory of text files for two words separated by n words.
 
-## Installation
-
-Add this line to your application's Gemfile:
+## Compile
 
 ```ruby
-gem 'text_search'
+gem build nword_text_search.gemspec
 ```
 
-And then execute:
+## Install Gem
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install text_search
+```ruby
+gem install nword_text_search-1.0.0.gem
+```
 
 ## Usage
 
