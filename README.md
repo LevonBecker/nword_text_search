@@ -44,10 +44,12 @@ chef exec nword_text_search
 
 Using the test files in the test directory.
 
-```
+```bash
 cd /path/to/nword_text_search
 . /build_install_run_chefdk.sh
 ```
+
+### Specify Directory to Search
 
     -------------------------------------------------------------------------------------
     NWORD TEXT SEARCH!
@@ -137,3 +139,85 @@ cd /path/to/nword_text_search
     -------------------------
     /Users/levon/Development/github/levonbecker/nword_text_search/test/test01.txt
     /Users/levon/Development/github/levonbecker/nword_text_search/test/test02.txt
+
+### Used Current Directory
+
+```bash
+cd test
+```
+
+    -------------------------------------------------------------------------------------
+    NWORD TEXT SEARCH!
+    -------------------------------------------------------------------------------------
+    AUTHOR:   Levon Becker
+    VERSION:  1.1.0 - 07/31/2015
+    PURPOSE:  Search for 2 words in text files that are n words apart.
+    -------------------------------------------------------------------------------------
+    SELECT SEARCH INPUT OPTION
+    -------------------------------------------------------------------------------------
+    
+    1. Current Directory
+    2. Enter Path
+    3. Quit
+    > 1
+
+    -------------------------------------------------------------------------------------
+    NWORD TEXT SEARCH!
+    -------------------------------------------------------------------------------------
+    AUTHOR:   Levon Becker
+    VERSION:  1.1.0 - 07/31/2015
+    PURPOSE:  Search for 2 words in text files that are n words apart.
+    -------------------------------------------------------------------------------------
+    ENTER FIRST SEARCH WORD
+    -------------------------------------------------------------------------------------
+    
+    First Word >> the
+
+    -------------------------------------------------------------------------------------
+    NWORD TEXT SEARCH!
+    -------------------------------------------------------------------------------------
+    AUTHOR:   Levon Becker
+    VERSION:  1.1.0 - 07/31/2015
+    PURPOSE:  Search for 2 words in text files that are n words apart.
+    -------------------------------------------------------------------------------------
+    ENTER SECOND SEARCH WORD
+    -------------------------------------------------------------------------------------
+    
+    Second Word >> 49ers
+
+    -------------------------------------------------------------------------------------
+    NWORD TEXT SEARCH!
+    -------------------------------------------------------------------------------------
+    AUTHOR:   Levon Becker
+    VERSION:  1.1.0 - 07/31/2015
+    PURPOSE:  Search for 2 words in text files that are n words apart.
+    -------------------------------------------------------------------------------------
+    ENTER N WORDS SEPARATION
+    -------------------------------------------------------------------------------------
+    
+    N Words >> 10
+
+    -------------------------------------------------------------------------------------
+    NWORD TEXT SEARCH!
+    -------------------------------------------------------------------------------------
+    AUTHOR:   Levon Becker
+    VERSION:  1.1.0 - 07/31/2015
+    PURPOSE:  Search for 2 words in text files that are n words apart.
+    -------------------------------------------------------------------------------------
+    RESULTS
+    -------------------------------------------------------------------------------------
+    
+    SEARCH PATH:   (/Users/levon/Development/github/levonbecker/nword_text_search/test)
+    FIRST WORD:    (the)
+    SECOND WORD:   (49ers)
+    N WORDS:       (10)
+    
+    FILES SEARCHED:
+    -------------------------
+    /Users/levon/Development/github/levonbecker/nword_text_search/test/test01.txt
+    /Users/levon/Development/github/levonbecker/nword_text_search/test/test02.txt
+    /Users/levon/Development/github/levonbecker/nword_text_search/test/test03.txt
+    
+    FILES THAT MATCH SEARCH:
+    -------------------------
+    /Users/levon/Development/github/levonbecker/nword_text_search/test/test03.txt

@@ -114,7 +114,7 @@ module NwordTextSearch
             menu.choice('Enter Path') do
               @header.show_header
               @header.show_sub_header('ENTER SEARCH PATH')
-              @search_path = Readline.readline('Search Path >> ')
+              @search_path = Readline.readline('Search Path >> ').to_s
             end
             menu.choice(:Quit, 'Exit program.') { exit }
           end
@@ -124,13 +124,13 @@ module NwordTextSearch
       def prompt_word_one
         @header.show_header
         @header.show_sub_header('ENTER FIRST SEARCH WORD')
-        @search_word_one = Readline.readline('First Word >> ')
+        @search_word_one = Readline.readline('First Word >> ').to_s
       end
 
       def prompt_word_two
         @header.show_header
         @header.show_sub_header('ENTER SECOND SEARCH WORD')
-        @search_word_two = Readline.readline('Second Word >> ')
+        @search_word_two = Readline.readline('Second Word >> ').to_s
       end
 
       def prompt_n_words
